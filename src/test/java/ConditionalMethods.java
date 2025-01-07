@@ -12,6 +12,7 @@ public class ConditionalMethods {
         driver.get("https://demo.nopcommerce.com/register");
         driver.manage().window().maximize();
         WebElement logo = driver.findElement(By.xpath("//img[@alt='nopCommerce demo store']"));
+        //if the element is displayed or not
         System.out.println("Display Status of logo is: "+logo.isDisplayed());
     }
 }
