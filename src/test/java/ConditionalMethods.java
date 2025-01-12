@@ -37,5 +37,11 @@ public class ConditionalMethods {
         System.out.println("Male Radio Button selected status is: " + male_rb.isSelected());
         female_rb.click();
         System.out.println("Female Radio Button selected status is: " + female_rb.isSelected());
+
+
+        System.out.println("NewLetter CheckBox is selected: "+driver.findElement(By.xpath("//input[@id='Newsletter']")).isSelected());
+
+        // Browser Method/ Command
+
     }
 }
