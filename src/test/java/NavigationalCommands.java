@@ -15,7 +15,12 @@ public class NavigationalCommands {
 
         URL url = new URL("https://www.nopcommerce.com");
         driver.navigate().to(url);
+        driver.navigate().to("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
+        driver.navigate().back();
+        System.out.println(driver.getCurrentUrl());
+        driver.navigate().forward();
+        System.out.println(driver.getCurrentUrl());
         //* How navigate().to() Method Works *//
         // 1. First it checks if the passed argument is a string or an object
         // 2. If it is a string format it will directly pass it to get() method
